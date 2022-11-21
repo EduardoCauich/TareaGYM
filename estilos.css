@@ -1,0 +1,282 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+@media screen and (max-width: 480px ){
+    .ancho{
+        margin: auto;
+    }
+    .parte1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 10px 0px;
+    }
+    .parte1 figure{
+        width: 250px;
+    }
+    .parte1 figure img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .parte1 i{
+        color: #ff4048 ;
+        font-size: 50px;
+    }
+    .contenedorgeder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #ff4048;
+    display: none;
+    }
+    nav{
+    width:100%;
+    }
+    nav ul{
+    list-style: none; /*------ al ul le quito los puntos------*/
+
+    }
+    nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px white dotted;
+    width: 100%;
+    }
+    /*------ parte del slide de fotos------*/
+    
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    }
+  
+  /*  fin */
+  
+  .callbacks_container {
+    position: relative;
+    margin:auto;
+    }
+    .callbacks_container img{
+      height:500px;
+      object-fit:cover;
+    }
+    .callbacks_container ul {
+      margin:0px;
+      }
+  
+  .caption {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #333;
+    color: #fff;
+    left: 20%;
+    top: 70%;
+    width: 310px;
+    background-color: rgba(0,0,0,.5);
+    padding: 15px 30px 15px 20px;
+    }
+    .callbacks_nav {
+        position: absolute;
+        top: 52%;
+        left: 0;
+        opacity: 0.7;
+        z-index: 3;
+        text-indent: -9999px;
+        overflow: hidden;
+        text-decoration: none;
+        height: 50px;
+        width: 30px;
+        background: transparent url("imagenes/derecha.svg") no-repeat left top;
+        margin-top: -45px;
+        }
+  .callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+    margin-top: -35px;
+    }
+    .callbacks_nav.prev {
+        background-position: left top;
+        transform: rotate(180deg);
+    }
+    .servicios{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .servicios h2{
+        text-align: center;
+        margin: auto;
+        width: 300px;
+        font-size: 35px;
+        color: #ff4048;
+    }
+    .servicios hr{
+        width: 100px;
+        margin: auto;
+        height: 5px;
+        background-color: black;
+        border: none;
+    }
+    .icono{
+        border: 2px gray solid;
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .icono i{
+        font-size: 55px;
+        color: #ff4048;
+    }
+    .servicios article{
+        box-shadow: 0px 0px 4px grey;
+        width: 70%;
+        height: 250px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .galeria a {
+        width: 50%;
+    }
+    .galeria a img{
+        width: 100%;
+        height: 100%;
+    }
+    .paralax{
+        background-image: url("imagenes/foto_parallaxs.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-attachment: fixed;
+        position: relative;
+    }
+    .parralaxas::before{
+        content: "";
+        width: 100%;
+        height: 500px;
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,.5) 0%, rgba(252,70,107,.5) 100%);
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+    }
+    .paralax h2{
+        font-size: 50px;
+        text-shadow: 1px 1px gray;
+        width: 250px;
+        text-align: right;
+        margin-right: 30px;
+        color: white;
+    }
+    .paralax h2 span{
+        color: #ff4048;
+    }
+    .boton{
+    background: #ff4048;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: all .5s;
+    margin-right: 30px;
+    font-size: 20px;
+    }
+    .redes{
+        border: 3px #ff4048 solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        gap: 20px;
+    }
+    .red{
+        border-radius: 50%;
+        border: 1px gray solid;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff4048;
+        font-size: 25px;
+    }
+    .flecha{
+    position: fixed; /*------ hace que se mantenga fijo------*/
+    font-size: 30px;
+    bottom: 20px;
+    right: 20px;
+     z-index: 8;
+     background-color: gray;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .flecha i{
+        color: white;
+    }
+}
